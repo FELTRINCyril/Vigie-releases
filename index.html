@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Vigie - L'espace et l'activité de votre Mac</title>
+  <meta name="description" content="Vigie surveille l'espace disque et ce qui tourne sur votre Mac, vous prévient avant qu'il soit plein et ne propose de supprimer que ce qu'il peut prouver sans risque. App native pour macOS 26, gratuite.">
+  <meta name="theme-color" content="#08101d">
+  <meta name="color-scheme" content="dark">
+
+  <link rel="icon" href="assets/img/vigie-icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Vigie">
+  <meta property="og:title" content="Vigie - L'espace et l'activité de votre Mac">
+  <meta property="og:description" content="De la place sur votre Mac, sans rien risquer. Vigie ne propose de supprimer que ce qu'il peut prouver sans risque.">
+  <meta property="og:url" content="https://feltrincyril.github.io/Vigie-releases/">
+  <meta property="og:image" content="https://feltrincyril.github.io/Vigie-releases/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Vigie, un anneau vert, jaune et orange sur fond bleu nuit, avec la phrase : De la place sur votre Mac, sans rien risquer.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="assets/css/site.css?v=20261126">
+  <script src="assets/js/site.js?v=20261126" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="nav" id="haut">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#haut" aria-label="Vigie, retour en haut de la page">
+        <img src="assets/img/vigie-icon.svg" alt="" width="26" height="26"><span>Vigie</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#fiabilite">Fiabilité</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#questions">Questions</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta js-download" href="https://github.com/FELTRINCyril/Vigie-releases/releases/latest">Télécharger</a>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="titre-hero">
+      <img class="hero-icon" src="assets/img/vigie-icon.svg" alt="" width="96" height="96">
+      <h1 id="titre-hero">De la place sur votre Mac, sans rien risquer.</h1>
+      <p class="hero-sub">Vigie surveille l'espace disque et ce qui tourne sur votre Mac, vous prévient avant qu'il soit plein, et ne propose de supprimer que ce qu'il peut prouver sans risque.</p>
+
+      <div class="download">
+        <a class="btn btn-primary js-download" href="https://github.com/FELTRINCyril/Vigie-releases/releases/latest">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          Télécharger pour Mac
+        </a>
+        <p class="download-meta js-download-meta">Dernière version sur GitHub</p>
+        <p class="download-req">macOS 26 - Mac Apple Silicon ou Intel - Gratuit</p>
+        <p class="platform-note js-platform-note" hidden></p>
+      </div>
+    </section>
+
+    <!-- ===== VISUEL PRINCIPAL (maquette HTML/CSS, voir assets/captures/README.md) ===== -->
+    <section class="showcase" aria-label="Aperçu de l'application">
+      <div class="glow" aria-hidden="true"></div>
+      <figure class="window js-tilt">
+        <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="app" role="img" aria-label="La fenêtre de Vigie, section Vue d'ensemble : à gauche une barre latérale, à droite l'espace libre du disque avec sa tendance, la mémoire et le processeur, puis la liste de ce qui peut être libéré, en vert, orange et rouge, avec un bouton Libérer 7,9 Go.">
+          <div class="app-side" aria-hidden="true">
+            <p class="side-it is-on"><i class="ic ic-blue"></i>Vue d'ensemble</p>
+            <p class="side-sec">Disque</p>
+            <p class="side-it"><i class="ic ic-green"></i>Libérer de l'espace</p>
+            <p class="side-it"><i class="ic ic-grey"></i>Explorer le disque</p>
+            <p class="side-it"><i class="ic ic-orange"></i>À archiver</p>
+            <p class="side-sec">Activité</p>
+            <p class="side-it"><i class="ic ic-purple"></i>Ce qui tourne</p>
+            <p class="side-it"><i class="ic ic-cyan"></i>Serveurs et Docker</p>
+          </div>
+          <div class="app-main" aria-hidden="true">
+            <div class="app-bar">
+              <b>Vue d'ensemble</b>
+              <span class="pill">Historique</span>
+              <span class="pill pill-blue">Analyser</span>
+            </div>
+            <div class="app-cards">
+              <div class="card card-disk">
+                <svg class="card-ring" viewBox="0 0 44 44"><circle class="ring-bg" cx="22" cy="22" r="17"/><circle class="ring-fg" cx="22" cy="22" r="17" pathLength="100"/></svg>
+                <div>
+                  <p class="card-t">Disque</p>
+                  <p class="card-big">86 Go <span>libres sur 494 Go</span></p>
+                  <p class="card-sub"><b class="t-orange">-1,2 Go par jour</b> : plein dans environ 70 jours</p>
+                </div>
+              </div>
+              <div class="card">
+                <p class="card-t">Activité</p>
+                <p class="card-big">61 % <span>de mémoire utilisée</span></p>
+                <span class="gauge"><i class="w-61"></i></span>
+                <p class="card-sub">Processeur 18 %, 2 points d'attention</p>
+              </div>
+            </div>
+            <div class="card card-list">
+              <p class="card-t">Libérer de l'espace</p>
+              <div class="li"><span class="chk is-on"></span><span class="dot d-green"></span><span class="li-n"><b>Caches de compilation Xcode</b><em>Se recréent à la prochaine compilation. Xcode est fermé.</em></span><span class="li-sz">6,4 Go</span></div>
+              <div class="li"><span class="chk is-on"></span><span class="dot d-green"></span><span class="li-n"><b>Cache de Homebrew</b><em>Téléchargements d'installation déjà utilisés.</em></span><span class="li-sz">1,2 Go</span></div>
+              <div class="li"><span class="chk is-on"></span><span class="dot d-green"></span><span class="li-n"><b>Cache de pip</b><em>Paquets Python déjà installés. pip n'est pas lancé.</em></span><span class="li-sz">310 Mo</span></div>
+              <div class="li"><span class="chk"></span><span class="dot d-orange"></span><span class="li-n"><b>Journal serveur.log</b><em>Plus écrit depuis 3 semaines. Ira à la corbeille.</em></span><span class="li-sz">640 Mo</span></div>
+              <div class="li"><span class="chk"></span><span class="dot d-orange"></span><span class="li-n"><b>Dépendances JavaScript : site-perso</b><em>Projet inactif depuis 4 mois. Ira à la corbeille.</em></span><span class="li-sz">820 Mo</span></div>
+              <div class="li"><span class="chk is-off"></span><span class="dot d-red"></span><span class="li-n"><b>Image Docker : api-demo</b><em>Signalée seulement : utilisée il y a 5 jours.</em></span><span class="li-sz">1,7 Go</span></div>
+              <div class="li"><span class="chk is-off"></span><span class="dot d-red"></span><span class="li-n"><b>Téléchargements de plus de 90 jours</b><em>Signalés seulement : c'est peut-être la seule copie.</em></span><span class="li-sz">3,2 Go</span></div>
+              <div class="cta"><span><b>Sans risque :</b> 7,9 Go libérables en un clic</span><span class="pill pill-green">Libérer 7,9 Go</span></div>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <p class="showcase-note">Interface simulée. Noms et tailles fictifs.</p>
+    </section>
+
+    <!-- ===== FONCTIONNALITES ===== -->
+    <section class="features" id="fonctionnalites" aria-labelledby="titre-fonctionnalites">
+      <div class="section-head">
+        <h2 id="titre-fonctionnalites"><span class="line">Ce qui remplit votre Mac.</span> <span class="line">Et ce qui peut partir.</span></h2>
+        <p>Caches, dépendances de projets, journaux, images Docker, serveurs oubliés : Vigie les trouve, les mesure, et vous dit lesquels peuvent partir.</p>
+      </div>
+
+      <div class="tiles">
+
+        <article class="tile tile-wide" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M9 7V5h6v2M7 7l1 12.5h8L17 7"/></svg>
+            <h3>Libérer de l'espace, en trois couleurs</h3>
+            <p>Chaque élément trouvé reçoit un niveau de risque. Le vert part en un clic, l'orange se coche un par un et va à la corbeille, le rouge est seulement signalé : c'est à vous de décider.</p>
+          </div>
+          <div class="vis vis-levels" aria-hidden="true">
+            <div class="lv lv-green"><span class="dot d-green"></span><b>Vert</b><em>Se recrée tout seul. Libéré en un clic.</em><span class="lv-sz">7,9 Go</span></div>
+            <div class="lv lv-orange"><span class="dot d-orange"></span><b>Orange</b><em>À vérifier, élément par élément. Va à la corbeille.</em><span class="lv-sz">2,3 Go</span></div>
+            <div class="lv lv-red"><span class="dot d-red"></span><b>Rouge</b><em>Signalé seulement. Jamais supprimé par Vigie.</em><span class="lv-sz">14 Go</span></div>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 8.5h18"/></svg>
+            <h3>Dans la barre des menus</h3>
+            <p>L'espace libre toujours sous les yeux, avec un anneau qui passe à l'orange puis au rouge quand le disque se remplit.</p>
+          </div>
+          <div class="vis vis-menubar" aria-hidden="true">
+            <div class="mb-strip">
+              <span class="mb-other"></span><span class="mb-other"></span>
+              <span class="mb-vigie"><svg viewBox="0 0 20 20"><circle class="mb-ring-bg" cx="10" cy="10" r="7"/><circle class="mb-ring" cx="10" cy="10" r="7" pathLength="100"/></svg>86 Go</span>
+              <span class="mb-clock">9:41</span>
+            </div>
+            <div class="mb-pop">
+              <p class="mb-k">Disque</p>
+              <p class="mb-v">86 Go <span>libres sur 494 Go</span></p>
+              <span class="gauge gauge-disk"><i class="w-83"></i></span>
+              <p class="mb-g">Libérable sans risque : 7,9 Go</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg>
+            <h3>Prévenu avant d'être plein</h3>
+            <p>Une notification quand l'espace passe sous votre seuil, quand le disque se remplit trop vite, ou quand une app consomme trop longtemps.</p>
+          </div>
+          <div class="vis vis-notif" aria-hidden="true">
+            <div class="nt">
+              <img src="assets/img/vigie-icon.svg" alt="" width="28" height="28" loading="lazy">
+              <p><b>Le disque se remplit</b>À ce rythme (-2 Go par jour), il sera plein dans environ 6 jours.</p>
+            </div>
+            <div class="nt nt-2">
+              <img src="assets/img/vigie-icon.svg" alt="" width="28" height="28" loading="lazy">
+              <p><b>Navigateur consomme beaucoup de mémoire</b>3,1 Go depuis 20 minutes.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V6M4 18h16M8 15v-4M12 15V8M16 15v-6"/></svg>
+            <h3>Ce qui tourne</h3>
+            <p>Les apps qui occupent la mémoire et le processeur, regroupées par app, avec de quoi quitter celle qui en prend trop.</p>
+          </div>
+          <div class="vis vis-apps" aria-hidden="true">
+            <p class="ap"><span class="ap-n">Navigateur</span><span class="ap-bar"><i class="w-82"></i></span><span class="ap-v">3,1 Go</span></p>
+            <p class="ap"><span class="ap-n">Xcode</span><span class="ap-bar"><i class="w-64"></i></span><span class="ap-v">2,4 Go</span></p>
+            <p class="ap"><span class="ap-n">Docker</span><span class="ap-bar"><i class="w-50"></i></span><span class="ap-v">1,9 Go</span></p>
+            <p class="ap"><span class="ap-n">Messages</span><span class="ap-bar"><i class="w-14"></i></span><span class="ap-v">410 Mo</span></p>
+          </div>
+        </article>
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6" rx="1.5"/><rect x="3.5" y="14" width="17" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+            <h3>Serveurs oubliés et Docker</h3>
+            <p>Un serveur local resté ouvert après la fermeture de son terminal, des conteneurs arrêtés, des images Docker inutilisées : tout est listé.</p>
+          </div>
+          <div class="vis vis-servers" aria-hidden="true">
+            <div class="sv"><span class="dot d-orange"></span><span class="sv-n"><b>localhost:3000</b><em>Son terminal est fermé</em></span><span class="sv-btn">Arrêter</span></div>
+            <div class="sv"><span class="dot d-green"></span><span class="sv-n"><b>postgres</b><em>Docker, en marche</em></span><span class="sv-v">180 Mo</span></div>
+            <div class="sv"><span class="dot d-grey"></span><span class="sv-n"><b>api-demo</b><em>Docker, arrêté depuis 12 jours</em></span><span class="sv-v">1,7 Go</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="tiles tiles-2">
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></svg>
+            <h3>Explorer le disque</h3>
+            <p>Les dossiers les plus lourds de votre dossier personnel, affichés tout de suite et complétés au fil de la mesure.</p>
+          </div>
+          <div class="vis vis-explore" aria-hidden="true">
+            <p class="ex"><span class="ex-n">Bibliothèque</span><span class="ex-bar"><i class="w-90"></i></span><span class="ex-v">118 Go</span></p>
+            <p class="ex"><span class="ex-n">Documents</span><span class="ex-bar"><i class="w-50"></i></span><span class="ex-v">64 Go</span></p>
+            <p class="ex"><span class="ex-n">Développeur</span><span class="ex-bar"><i class="w-26"></i></span><span class="ex-v">31 Go</span></p>
+            <p class="ex"><span class="ex-n">Téléchargements</span><span class="ex-bar"><i class="w-14"></i></span><span class="ex-v">17 Go</span></p>
+          </div>
+        </article>
+
+
+        <article class="tile tile-wide" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/></svg>
+            <h3>Widgets</h3>
+            <p>Sur le bureau ou dans le centre de notifications : l'espace libre, sa tendance sur 7 jours, ce qui consomme et ce qui peut partir.</p>
+          </div>
+          <div class="vis vis-widgets" aria-hidden="true">
+            <div class="wg wg-s">
+              <svg class="wg-ring" viewBox="0 0 44 44"><circle class="ring-bg" cx="22" cy="22" r="17"/><circle class="ring-fg" cx="22" cy="22" r="17" pathLength="100"/></svg>
+              <b>86 Go</b><em>libres</em>
+            </div>
+            <div class="wg wg-m">
+              <div class="wg-col">
+                <p class="wg-k">Espace libre</p>
+                <b>86 Go</b>
+                <em class="t-orange">-1,2 Go par jour</em>
+                <svg class="wg-spark" viewBox="0 0 120 34" preserveAspectRatio="none"><path d="M0 6 L20 8 L40 9 L60 14 L80 15 L100 21 L120 24"/></svg>
+              </div>
+              <div class="wg-col">
+                <p class="wg-k">À libérer</p>
+                <p class="wg-row"><span class="dot d-green"></span>Sans risque<b>7,9 Go</b></p>
+                <p class="wg-row"><span class="dot d-orange"></span>À vérifier<b>2,3 Go</b></p>
+                <p class="wg-k wg-k2">Mémoire</p>
+                <span class="gauge"><i class="w-61"></i></span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="tile tile-plain tile-half" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.8 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.3-4.6"/></svg>
+          <h3>Mises à jour automatiques</h3>
+          <p>Vigie vous propose chaque nouvelle version et l'installe pour vous. Chaque mise à jour est signée et vérifiée avant l'installation.</p>
+        </article>
+
+        <article class="tile tile-plain tile-half" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+          <h3>Rien ne quitte votre Mac</h3>
+          <p>Pas de compte, pas de serveur, pas de publicité, pas de mesure d'audience. Les analyses sont faites sur votre Mac et y restent.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== FIABILITE ===== -->
+    <section class="trust" id="fiabilite" aria-labelledby="titre-fiabilite">
+      <div class="section-head">
+        <h2 id="titre-fiabilite"><span class="line">Rien n'est proposé</span> <span class="line">sans preuve.</span></h2>
+        <p>Un outil de nettoyage qui se trompe peut effacer des semaines de travail. Vigie part donc du refus : un élément n'est jamais dit "sans risque" tant que tout ne le prouve pas.</p>
+      </div>
+
+      <div class="proofs" data-reveal>
+        <div class="proof-card">
+          <p class="proof-k"><span class="dot d-green"></span>Avant de proposer un élément en vert, Vigie vérifie que :</p>
+          <ul class="proof-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>c'est un <b>cache connu pour se recréer tout seul</b>, pas un dossier dont il ignore le rôle ;</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>l'<b>app qui le crée est fermée</b> ;</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>aucun fichier n'y est ouvert</b> par un programme ;</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>rien n'y a bougé depuis au moins une heure</b>.</span></li>
+          </ul>
+          <p class="proof-note">Ces conditions sont vérifiées pendant l'analyse, puis une seconde fois juste avant d'agir. Si l'une ne tient plus, l'élément reste affiché, non cochable, avec la raison.</p>
+        </div>
+        <div class="proof-side">
+          <div class="proof-mini">
+            <p class="proof-k"><span class="dot d-orange"></span>L'orange va à la corbeille</p>
+            <p>Un élément moins sûr se coche un par un et part dans la corbeille de macOS : vous pouvez le récupérer tant qu'elle n'est pas vidée.</p>
+          </div>
+          <div class="proof-mini">
+            <p class="proof-k"><span class="dot d-red"></span>Le rouge n'est jamais supprimé</p>
+            <p>Projets, fichiers de travail, téléchargements, images Docker encore utilisées : Vigie les signale pour vous aider à faire le tri, sans bouton pour les effacer.</p>
+          </div>
+          <div class="proof-mini">
+            <p class="proof-k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/><path d="M12 8v4l3 2"/></svg>Tout est noté</p>
+            <p>Chaque action reste dans l'historique : ce qui a été libéré, quand, et combien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSTALLATION ===== -->
+    <section class="install" id="installation" aria-labelledby="titre-installation">
+      <div class="section-head">
+        <h2 id="titre-installation">Installé en trois gestes.</h2>
+        <p>Vigie est signé par son développeur et validé par Apple (notarisé). Une fois installé, il se met à jour tout seul.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <div class="step-vis" aria-hidden="true">
+            <svg viewBox="0 0 120 120" class="disk">
+              <rect x="22" y="18" width="76" height="84" rx="12" class="disk-body"/>
+              <circle cx="60" cy="56" r="20" class="disk-hole"/>
+              <circle cx="60" cy="56" r="5" class="disk-center"/>
+              <path d="M60 80v16m0 0-7-7m7 7 7-7" class="disk-arrow"/>
+            </svg>
+          </div>
+          <h3><span class="step-n" aria-hidden="true">1</span>Téléchargez</h3>
+          <p>Récupérez l'image disque de Vigie, puis ouvrez-la.</p>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step-vis step-drag" aria-hidden="true">
+            <img src="assets/img/vigie-icon.svg" alt="" width="56" height="56" loading="lazy">
+            <svg viewBox="0 0 60 20" class="drag-arrow"><path d="M2 10h52m0 0-7-7m7 7-7 7"/></svg>
+            <svg viewBox="0 0 64 52" class="folder"><path d="M4 10a5 5 0 0 1 5-5h14l6 6h26a5 5 0 0 1 5 5v27a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M24 33h16M28 25l4-4 4 4M32 21v12" class="folder-a"/></svg>
+          </div>
+          <h3><span class="step-n" aria-hidden="true">2</span>Glissez</h3>
+          <p>Faites glisser Vigie sur le dossier Applications.</p>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step-vis" aria-hidden="true">
+            <div class="dialog">
+              <img src="assets/img/vigie-icon.svg" alt="" width="34" height="34" loading="lazy">
+              <p>"Vigie" est une app téléchargée sur Internet. Voulez-vous <span class="nw">l'ouvrir ?</span></p>
+              <span class="dialog-btns"><span>Annuler</span><span class="is-default">Ouvrir</span></span>
+            </div>
+          </div>
+          <h3><span class="step-n" aria-hidden="true">3</span>Ouvrez</h3>
+          <p>Au premier lancement, cliquez sur "Ouvrir". Vigie s'installe dans la barre des menus, en haut de l'écran.</p>
+        </li>
+      </ol>
+
+      <div class="access" data-reveal>
+        <div class="access-text">
+          <h3>Recommandé : l'accès complet au disque</h3>
+          <p>Sans lui, macOS cache à Vigie certains dossiers protégés (sauvegardes d'iPhone, données de certaines apps), qui ne sont alors pas mesurés. Vigie le signale et propose d'ouvrir le bon réglage.</p>
+          <ol class="access-steps">
+            <li>Ouvrez Réglages Système, puis Confidentialité et sécurité.</li>
+            <li>Choisissez Accès complet au disque.</li>
+            <li>Activez Vigie, puis relancez l'analyse.</li>
+          </ol>
+        </div>
+        <div class="access-vis" aria-hidden="true">
+          <p class="acc-head">Accès complet au disque</p>
+          <p class="acc-row"><span class="acc-app"></span>Terminal<span class="sw is-on"></span></p>
+          <p class="acc-row"><img src="assets/img/vigie-icon.svg" alt="" width="18" height="18" loading="lazy">Vigie<span class="sw is-on"></span></p>
+          <p class="acc-row"><span class="acc-app acc-app-2"></span>Sauvegarde<span class="sw"></span></p>
+        </div>
+      </div>
+
+      <p class="install-after">Ensuite, rien à faire : quand une nouvelle version sort, Vigie vous la propose et l'installe en deux clics.</p>
+    </section>
+
+    <!-- ===== QUESTIONS ===== -->
+    <section class="faq" id="questions" aria-labelledby="titre-questions">
+      <div class="section-head">
+        <h2 id="titre-questions">Questions fréquentes</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r1" id="q1"><span class="qa-q">Vigie peut-il supprimer mon <span class="nw">travail ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r1" role="region" aria-labelledby="q1">
+            <p>Vigie ne supprime rien de lui-même : c'est toujours vous qui cochez et qui confirmez. Ce qui ressemble à du travail (projets, documents, fichiers de session, livrables de compilation, téléchargements) est classé en rouge, c'est-à-dire signalé sans bouton pour l'effacer.</p>
+            <p>Seul le vert part directement, et seulement quand Vigie a prouvé qu'il se recrée tout seul, que l'app qui l'utilise est fermée, qu'aucun fichier n'y est ouvert et que rien n'y a bougé depuis au moins une heure. L'orange va à la corbeille, d'où vous pouvez le récupérer.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r2" id="q2"><span class="qa-q">Que veulent dire vert, orange et <span class="nw">rouge ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r2" role="region" aria-labelledby="q2">
+            <p>Vert : se recrée tout seul, libérable en un clic. Orange : sans doute inutile, mais à vérifier ; il se coche un par un et va à la corbeille. Rouge : signalé pour vous aider à faire le tri, jamais supprimé par Vigie.</p>
+            <p>Un élément peut aussi apparaître grisé, avec sa raison : par exemple "Modifié il y a moins d'une heure" ou "L'app est ouverte". Il redeviendra cochable quand la condition sera remplie.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r3" id="q3"><span class="qa-q">Pourquoi l'accès complet au <span class="nw">disque ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r3" role="region" aria-labelledby="q3">
+            <p>macOS protège certains dossiers, comme les sauvegardes d'iPhone ou les données de certaines apps. Sans cet accès, Vigie ne peut pas les mesurer et le dit dans l'analyse. Il fonctionne quand même pour tout le reste.</p>
+            <p>Pour l'accorder : Réglages Système, Confidentialité et sécurité, Accès complet au disque, puis activez Vigie. Vous pouvez le retirer au même endroit à tout moment.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r4" id="q4"><span class="qa-q">Mes données sont-elles envoyées quelque <span class="nw">part ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r4" role="region" aria-labelledby="q4">
+            <p>Non. Pas de compte à créer, pas de serveur, pas de publicité, pas de mesure d'audience : la liste de vos fichiers et les mesures restent sur votre Mac.</p>
+            <p>Vigie se connecte seulement à GitHub pour vérifier les mises à jour. Pour dire qu'un projet est déjà sur un dépôt distant, il interroge ce dépôt avec vos propres accès Git, sans jamais rien y envoyer.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r5" id="q5"><span class="qa-q">Comment mettre à <span class="nw">jour ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r5" role="region" aria-labelledby="q5">
+            <p>À partir de la 0.3.0, vous n'avez rien à faire : Vigie vérifie au lancement puis chaque jour s'il existe une nouvelle version, vous la propose avec ses nouveautés, et l'installe. Les réglages de Vigie permettent aussi de lancer une recherche.</p>
+            <p>Vous avez la 0.2.0 ou une version plus ancienne ? Elle ne sait pas se mettre à jour seule : installez une fois la dernière version à sa place. Vos réglages sont gardés.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r6" id="q6"><span class="qa-q">Sur quel <span class="nw">Mac ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r6" role="region" aria-labelledby="q6">
+            <p>Un Mac sous macOS 26 ou plus récent, à puce Apple Silicon ou à processeur Intel.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r7" id="q7"><span class="qa-q">Comment signaler un <span class="nw">problème ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r7" role="region" aria-labelledby="q7">
+            <p>Remplissez le formulaire <a data-issue="probleme" href="https://github.com/FELTRINCyril/Vigie-releases/issues/new?template=probleme.yml">Signaler un problème</a>, avec votre version de Vigie, celle de macOS et ce qui s'est passé.</p>
+            <p>Ces messages sont publics : n'y mettez jamais de chemin complet, de nom d'utilisateur, de nom de client ou de projet, même dans une capture d'écran.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPEL FINAL ===== -->
+    <section class="final" aria-labelledby="titre-final">
+      <img src="assets/img/vigie-icon.svg" alt="" width="72" height="72" loading="lazy">
+      <h2 id="titre-final">Gardez de la place, <span class="nw">sans y penser.</span></h2>
+      <div class="download">
+        <a class="btn btn-primary js-download" href="https://github.com/FELTRINCyril/Vigie-releases/releases/latest">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          Télécharger pour Mac
+        </a>
+        <p class="download-meta js-download-meta">Dernière version sur GitHub</p>
+        <p class="download-req">macOS 26 - Mac Apple Silicon ou Intel - Gratuit</p>
+        <p class="platform-note js-platform-note" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h2 class="footer-h">Télécharger</h2>
+          <ul>
+            <li><a class="js-download" href="https://github.com/FELTRINCyril/Vigie-releases/releases/latest">Dernière version</a></li>
+            <li><a href="versions.html">Toutes les versions</a></li>
+            <li><a class="js-notes" href="versions.html">Notes de version</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-h">Vos retours</h2>
+          <ul>
+            <li><a data-issue="probleme" href="https://github.com/FELTRINCyril/Vigie-releases/issues/new?template=probleme.yml">Signaler un problème</a></li>
+            <li><a data-issue="idee" href="https://github.com/FELTRINCyril/Vigie-releases/issues/new?template=idee.yml">Proposer une idée</a></li>
+            <li><a data-issue="question" href="https://github.com/FELTRINCyril/Vigie-releases/issues/new?template=question.yml">Poser une question</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h2 class="footer-h">Confidentialité</h2>
+          <p>Vigie fonctionne entièrement sur votre Mac : pas de compte, pas de serveur, pas de pisteur. Il se connecte seulement à GitHub pour vérifier les mises à jour.</p>
+        </div>
+      </div>
+      <p class="footer-note">Vigie est une app indépendante, gratuite, sans lien avec Apple.</p>
+    </div>
+  </footer>
+</body>
+</html>

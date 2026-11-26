@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 824 824" width="824" height="824">
+  <title>Vigie</title>
+  <defs>
+    <clipPath id="sq"><rect x="100" y="100" width="824" height="824" rx="185"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6ECF3"/></linearGradient>
+    <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#10B981"/><stop offset=".6" stop-color="#F59E0B"/><stop offset="1" stop-color="#EA580C"/></linearGradient>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#bg)"/>
+    <rect x="100.5" y="100.5" width="823" height="823" rx="185" fill="none" stroke="#0F172A" stroke-opacity=".06" stroke-width="3"/>
+    <circle cx="512" cy="512" r="230" fill="none" stroke="#1D3557" stroke-opacity=".09" stroke-width="72"/>
+    <circle cx="512" cy="512" r="230" fill="none" stroke="url(#arc)" stroke-width="72" stroke-linecap="round" stroke-dasharray="1084 2000" transform="rotate(-90 512 512)"/>
+    <circle cx="512" cy="512" r="46" fill="#1D3557"/>
+  </g>
+</svg>

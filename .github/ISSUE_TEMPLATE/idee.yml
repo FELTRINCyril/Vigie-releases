@@ -1,0 +1,46 @@
+name: Proposer une idée ou une amélioration
+description: Une fonction qui manque, quelque chose à rendre plus simple.
+title: "[Idée] "
+labels: ["idee"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **Ce message sera public.** Tout le monde peut lire les issues de ce dépôt.
+        > Vigie affiche les fichiers de votre Mac : n'y collez **jamais** de chemin complet
+        > (il contient votre nom d'utilisateur), de nom de client ou de projet, ni de mot de passe,
+        > même dans une capture d'écran. Masquez-les avant d'envoyer.
+
+  - type: textarea
+    id: idee
+    attributes:
+      label: Votre idée
+      description: Ce que vous aimeriez pouvoir faire dans Vigie.
+    validations:
+      required: true
+
+  - type: textarea
+    id: pourquoi
+    attributes:
+      label: Pourquoi
+      description: Dans quelle situation cela vous servirait, et comment vous faites aujourd'hui.
+    validations:
+      required: false
+
+  - type: input
+    id: version-vigie
+    attributes:
+      label: Version de Vigie (facultatif)
+      description: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations."
+      placeholder: "0.3.0"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune information personnelle (chemin complet, nom de client ou de projet) dans ce message.
+          required: true

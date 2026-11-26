@@ -1,0 +1,82 @@
+name: Signaler un problème
+description: Quelque chose ne fonctionne pas comme prévu dans Vigie.
+title: "[Problème] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **Ce message sera public.** Tout le monde peut lire les issues de ce dépôt.
+        > Vigie affiche les fichiers de votre Mac : n'y collez **jamais** de chemin complet
+        > (il contient votre nom d'utilisateur), de nom de client ou de projet, ni de mot de passe,
+        > même dans une capture d'écran. Masquez-les avant d'envoyer.
+
+  - type: input
+    id: version-vigie
+    attributes:
+      label: Version de Vigie
+      description: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations."
+      placeholder: "0.3.0"
+    validations:
+      required: true
+
+  - type: input
+    id: version-systeme
+    attributes:
+      label: Version de macOS
+      description: Menu Pomme > À propos de ce Mac.
+      placeholder: "macOS 27.2.1"
+    validations:
+      required: true
+
+  - type: input
+    id: modele
+    attributes:
+      label: Modèle de Mac
+      placeholder: "MacBook Air M2, 2022"
+    validations:
+      required: false
+
+  - type: textarea
+    id: ce-qui-sest-passe
+    attributes:
+      label: Ce qui s'est passé
+      description: Décrivez le problème, et le message d'erreur exact s'il y en a un.
+    validations:
+      required: true
+
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Ce qui était attendu
+    validations:
+      required: true
+
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes pour reproduire
+      description: Si vous savez comment faire réapparaître le problème.
+      placeholder: |
+        1. Ouvrir Vigie depuis la barre des menus
+        2. Libérer de l'espace > Analyser
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: captures
+    attributes:
+      label: Captures d'écran (facultatif)
+      description: Glissez vos images ici. Vérifiez d'abord qu'aucun nom de fichier, de dossier ou de client n'y apparaît.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune information personnelle (chemin complet, nom de client ou de projet) dans ce message.
+          required: true
