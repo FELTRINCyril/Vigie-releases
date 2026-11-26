@@ -26,8 +26,8 @@
   <meta property="og:image:alt" content="Logo Vigie, un anneau vert, jaune et orange sur fond bleu nuit, avec la phrase : De la place sur votre Mac, sans rien risquer.">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="stylesheet" href="assets/css/site.css?v=20261126">
-  <script src="assets/js/site.js?v=20261126" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20261126b">
+  <script src="assets/js/site.js?v=20261126b" defer></script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -72,23 +72,24 @@
     <section class="showcase" aria-label="Aperçu de l'application">
       <div class="glow" aria-hidden="true"></div>
       <figure class="window js-tilt">
-        <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="app" role="img" aria-label="La fenêtre de Vigie, section Vue d'ensemble : à gauche une barre latérale, à droite l'espace libre du disque avec sa tendance, la mémoire et le processeur, puis la liste de ce qui peut être libéré, en vert, orange et rouge, avec un bouton Libérer 7,9 Go.">
           <div class="app-side" aria-hidden="true">
-            <p class="side-it is-on"><i class="ic ic-blue"></i>Vue d'ensemble</p>
+            <div class="win-bar"><i></i><i></i><i></i></div>
+            <p class="side-it is-on"><i class="sym s-gauge"></i>Vue d'ensemble</p>
             <p class="side-sec">Disque</p>
-            <p class="side-it"><i class="ic ic-green"></i>Libérer de l'espace</p>
-            <p class="side-it"><i class="ic ic-grey"></i>Explorer le disque</p>
-            <p class="side-it"><i class="ic ic-orange"></i>À archiver</p>
+            <p class="side-it"><i class="sym s-sparkles"></i>Libérer de l'espace</p>
+            <p class="side-it"><i class="sym s-folder"></i>Explorer le disque</p>
+            <p class="side-it"><i class="sym s-archivebox"></i>À archiver</p>
             <p class="side-sec">Activité</p>
-            <p class="side-it"><i class="ic ic-purple"></i>Ce qui tourne</p>
-            <p class="side-it"><i class="ic ic-cyan"></i>Serveurs et Docker</p>
+            <p class="side-it"><i class="sym s-cpu"></i>Ce qui tourne</p>
+            <p class="side-it"><i class="sym s-server"></i>Serveurs et Docker</p>
+            <p class="side-it side-foot"><i class="sym s-gearshape"></i>Alertes et réglages</p>
           </div>
           <div class="app-main" aria-hidden="true">
             <div class="app-bar">
               <b>Vue d'ensemble</b>
-              <span class="pill">Historique</span>
-              <span class="pill pill-blue">Analyser</span>
+              <span class="pill"><i class="sym s-clock"></i>Historique</span>
+              <span class="pill pill-blue"><i class="sym s-refresh"></i>Analyser</span>
             </div>
             <div class="app-cards">
               <div class="card card-disk">
@@ -134,7 +135,7 @@
 
         <article class="tile tile-wide" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M9 7V5h6v2M7 7l1 12.5h8L17 7"/></svg>
+            <i class="tile-sym sym s-sparkles" aria-hidden="true"></i>
             <h3>Libérer de l'espace, en trois couleurs</h3>
             <p>Chaque élément trouvé reçoit un niveau de risque. Le vert part en un clic, l'orange se coche un par un et va à la corbeille, le rouge est seulement signalé : c'est à vous de décider.</p>
           </div>
@@ -147,7 +148,7 @@
 
         <article class="tile" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 8.5h18"/></svg>
+            <i class="tile-sym sym s-menubar" aria-hidden="true"></i>
             <h3>Dans la barre des menus</h3>
             <p>L'espace libre toujours sous les yeux, avec un anneau qui passe à l'orange puis au rouge quand le disque se remplit.</p>
           </div>
@@ -168,7 +169,7 @@
 
         <article class="tile" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg>
+            <i class="tile-sym sym s-bell" aria-hidden="true"></i>
             <h3>Prévenu avant d'être plein</h3>
             <p>Une notification quand l'espace passe sous votre seuil, quand le disque se remplit trop vite, ou quand une app consomme trop longtemps.</p>
           </div>
@@ -186,7 +187,7 @@
 
         <article class="tile" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V6M4 18h16M8 15v-4M12 15V8M16 15v-6"/></svg>
+            <i class="tile-sym sym s-cpu" aria-hidden="true"></i>
             <h3>Ce qui tourne</h3>
             <p>Les apps qui occupent la mémoire et le processeur, regroupées par app, avec de quoi quitter celle qui en prend trop.</p>
           </div>
@@ -199,7 +200,7 @@
         </article>
         <article class="tile" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6" rx="1.5"/><rect x="3.5" y="14" width="17" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+            <i class="tile-sym sym s-server" aria-hidden="true"></i>
             <h3>Serveurs oubliés et Docker</h3>
             <p>Un serveur local resté ouvert après la fermeture de son terminal, des conteneurs arrêtés, des images Docker inutilisées : tout est listé.</p>
           </div>
@@ -214,7 +215,7 @@
 
         <article class="tile" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></svg>
+            <i class="tile-sym sym s-folder" aria-hidden="true"></i>
             <h3>Explorer le disque</h3>
             <p>Les dossiers les plus lourds de votre dossier personnel, affichés tout de suite et complétés au fil de la mesure.</p>
           </div>
@@ -229,7 +230,7 @@
 
         <article class="tile tile-wide" data-reveal>
           <div class="tile-text">
-            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/></svg>
+            <i class="tile-sym sym s-widgets" aria-hidden="true"></i>
             <h3>Widgets</h3>
             <p>Sur le bureau ou dans le centre de notifications : l'espace libre, sa tendance sur 7 jours, ce qui consomme et ce qui peut partir.</p>
           </div>
