@@ -16,7 +16,7 @@ body:
     id: version-vigie
     attributes:
       label: Version de Vigie
-      description: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations."
+      description: "Dans Vigie : Réglages > Général > Mises à jour (par exemple 0.3.0 (4))."
       placeholder: "0.3.0"
     validations:
       required: true

@@ -232,7 +232,7 @@
       prefix: "[Problème] ",
       fields: [
         { id: "title", label: "En une phrase", required: true, placeholder: "L'analyse reste bloquée sur l'étape Docker" },
-        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations.", required: true },
+        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans Vigie : Réglages > Général > Mises à jour (par exemple 0.3.0 (4)).", required: true },
         { id: "version-systeme", type: "system", label: "Version de macOS", hint: "Menu Pomme > À propos de ce Mac." },
         { id: "modele", label: "Modèle de Mac (facultatif)", hint: "Menu Pomme > À propos de ce Mac.", placeholder: "MacBook Air M2, 2022" },
         { id: "ce-qui-sest-passe", label: "Ce qui s'est passé", hint: "Et le message d'erreur exact s'il y en a un.", required: true, area: true },
@@ -249,7 +249,7 @@
         { id: "title", label: "En une phrase", required: true, placeholder: "Pouvoir exclure un dossier de l'analyse" },
         { id: "idee", label: "Votre idée", hint: "Ce que vous aimeriez pouvoir faire dans Vigie.", required: true, area: true },
         { id: "pourquoi", label: "Pourquoi (facultatif)", hint: "Dans quelle situation cela vous servirait.", area: true },
-        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations." }
+        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans Vigie : Réglages > Général > Mises à jour (par exemple 0.3.0 (4))." }
       ]
     },
     question: {
@@ -259,7 +259,7 @@
       fields: [
         { id: "title", label: "En une phrase", required: true, placeholder: "Pourquoi un élément reste-t-il en orange ?" },
         { id: "question", label: "Votre question", required: true, area: true },
-        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans le Finder : Applications, clic droit sur Vigie > Lire les informations." },
+        { id: "version-vigie", type: "vigie", label: "Version de Vigie", hint: "Dans Vigie : Réglages > Général > Mises à jour (par exemple 0.3.0 (4))." },
         { id: "version-systeme", type: "system", label: "Version de macOS", hint: "Menu Pomme > À propos de ce Mac." }
       ]
     }
