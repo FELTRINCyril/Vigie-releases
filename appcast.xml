@@ -3,6 +3,30 @@
     <channel>
         <title>Vigie</title>
         <item>
+            <title>0.3.1</title>
+            <pubDate>Thu, 26 Nov 2026 14:48:50 +0100</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Vigie 0.3.1</title>
+<style>body{font:13px -apple-system,sans-serif;margin:12px 16px;line-height:1.45}h2{font-size:14px;margin:14px 0 6px}ul{padding-left:18px;margin:0}li{margin:4px 0}</style>
+</head><body>
+<p>Correction d'un plantage, analyses plus lisibles et nouveau DMG.</p>
+<h2>Corrections</h2>
+<ul>
+<li><strong>Plantage</strong> : Vigie pouvait se fermer brusquement quand une commande en cours (Docker, git, Chrome) était interrompue. C'est corrigé.</li>
+<li><strong>Analyse</strong> : les fichiers que macOS et Python recréent tout seuls (.DS_Store, __pycache__) ne sont plus comptés comme "fichiers absents de GitHub".</li>
+<li>Quand un élément est bloqué parce qu'un outil tourne, Vigie dit lequel.</li>
+<li>Accords au singulier ("1 conteneur arrêté", "1 fichier").</li>
+</ul>
+<h2>Installation</h2>
+<ul><li>Nouveau DMG aux couleurs de Vigie.</li></ul>
+</body></html>
+]]></description>
+            <enclosure url="https://github.com/FELTRINCyril/Vigie-releases/releases/download/v0.3.1/Vigie-0.3.1.dmg" length="6456719" type="application/octet-stream" sparkle:edSignature="uQ+iBOQtUacr4v3nwI6U7FV/3Btp2NjBcUHjc8z1o12A9SzFW+Tsu+BB/ToDsAzSRAPhpsyYujgERp6J2GUOBA=="/>
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Thu, 26 Nov 2026 11:53:31 +0100</pubDate>
             <sparkle:version>4</sparkle:version>
